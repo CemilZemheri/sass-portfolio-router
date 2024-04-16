@@ -1,7 +1,9 @@
 @import "../../scss/variables";
+@import "../../SCSS/mixins";
+
 .project-bgImg-container{
     border: 2px solid red;
-    // @include bgImg(40vh, $main-bgImg-path);
+    @include bgImg(40vh, $main-bgImg-path);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -24,7 +26,7 @@
     &__item{
         width: 100%;
         cursor: pointer;
-        // border-bottom: 5px solid $secondary-color;
+        border-bottom: 5px solid $secondary-color;
         position: relative;
         img{
             width: 100%;
@@ -34,11 +36,11 @@
             content: '';
             width: 100%;
             height: 100%;
-            // background-color: $secondary-color;
+            background-color: $secondary-color;
             position: absolute;
             left: 0;
             opacity: 0;
-            // @include transition(0.5s)
+            @include transition(0.5s)
             
         }
         &:hover::after{

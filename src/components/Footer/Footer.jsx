@@ -1,4 +1,4 @@
-
+import "./_footer.scss"
 
 const Footer = () => {
   return (
@@ -17,7 +17,7 @@ const Footer = () => {
             <i class="fab fa-github fa-2x"></i>
           </a>
         </div>
-        <div class="copyright">&copy; Copyright 2023</div>
+        <div class="copyright">&copy; Copyright 2024 |CZ</div>
       </footer>
   )
 }
