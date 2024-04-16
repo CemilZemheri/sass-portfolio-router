@@ -12,7 +12,9 @@ const NotFound = () => {
           padding: "1rem",
           justifyContent: "center",
           alignItems:"center",
-          height: "7vh"
+          height: "7vh",
+          fontFamily:"sans-serif",
+          fontWeight:800,
         }}
         onClick={() => navigate("/")}
       >
