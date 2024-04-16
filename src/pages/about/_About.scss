@@ -1,5 +1,5 @@
 @import "../../scss/variables";
-@import "../../SCSS/mixins";
+@import "../../scss/mixins";
 
 .about-bgImg-container{
     @include bgImg(50vh, $main-bgImg-path);
