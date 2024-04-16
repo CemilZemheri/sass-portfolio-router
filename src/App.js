@@ -1,31 +1,7 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./index.css";
-import Navbar from "./components/Navbar/Navbar";
-import Home from "./pages/home/Home";
-import Contact from "./pages/contact/Contact";
-import About from "./pages/about/About";
-import Projects from "./pages/projects/Projects";
-import NotFound from "./pages/NotFound";
-import Footer from "./components/Footer/Footer";
+import AppRouter from "./router/router";
 
 function App() {
-
-  
-  return (
-    <BrowserRouter>
-   
-    
-      
-      <Routes>
-     
-        <Route path="/" element={<><Navbar /> <Home />  <Footer /></>} />
-        <Route path="/about" element={<><Navbar /> <About />  <Footer /></>} />
-        <Route path="/projects" element={<><Navbar /> <Projects /> <Footer /></>} />
-        <Route path="/contact" element={<><Navbar /> <Contact /> <Footer /></>} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </BrowserRouter>
-  );
+  return <AppRouter />;
 }
 
 export default App;
