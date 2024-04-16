@@ -9,17 +9,21 @@ import NotFound from "./pages/NotFound";
 import Footer from "./components/Footer/Footer";
 
 function App() {
+
+  
   return (
     <BrowserRouter>
-      <Navbar />
+   
+    
+      
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
+     
+        <Route path="/" element={<><Navbar /> <Home />  <Footer /></>} />
+        <Route path="/about" element={<><Navbar /> <About />  <Footer /></>} />
+        <Route path="/projects" element={<><Navbar /> <Projects /> <Footer /></>} />
+        <Route path="/contact" element={<><Navbar /> <Contact /> <Footer /></>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <Footer />
     </BrowserRouter>
   );
 }
